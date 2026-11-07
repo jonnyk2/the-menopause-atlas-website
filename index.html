@@ -15,6 +15,23 @@
 <meta property="og:url" content="https://themenopauseatlas.com/">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Book", "name": "The Menopause Atlas", "author": {"@type": "Person", "name": "Thea E. Kuiper"}, "publisher": {"@type": "Organization", "name": "Make Masters LLC"}, "numberOfPages": 424, "inLanguage": "en-US", "bookEdition": "First edition", "workExample": [{"@type": "Book", "bookFormat": "https://schema.org/Paperback", "isbn": "9798177679280", "url": "https://www.amazon.com/dp/B0HLMMCFMT"}, {"@type": "Book", "bookFormat": "https://schema.org/Hardcover", "isbn": "9798177749167", "url": "https://www.amazon.com/dp/B0HLN67M5L"}]}</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1674044090972437');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1674044090972437&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
@@ -599,4 +616,14 @@ var PREP = {"topics": [{"id": "hot", "label": "Hot flashes and night sweats", "c
 })();
 </script>
 
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a'); if(!a||!window.fbq) return;
+  var h=a.getAttribute('href')||'';
+  if(h.indexOf('checkout/buy')>-1){fbq('track','InitiateCheckout',{content_name:'Digital Edition',value:29.99,currency:'USD'});}
+  else if(h.indexOf('amazon.com/dp/B0HLMMCFMT')>-1){fbq('trackCustom','AmazonClick',{edition:'paperback'});}
+  else if(h.indexOf('amazon.com/dp/B0HLN67M5L')>-1){fbq('trackCustom','AmazonClick',{edition:'hardcover'});}
+  else if(h.indexOf('free-chapter-3.pdf')>-1){fbq('track','Lead',{content_name:'Free Chapter 3'});}
+},true);
+</script>
 </body></html>
