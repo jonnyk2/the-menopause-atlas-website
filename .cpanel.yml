@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/epbqpacctn/themenopauseatlas.com/
+    - /bin/cp -f index.html cover.jpg figure.png free-chapter-3.pdf $DEPLOYPATH

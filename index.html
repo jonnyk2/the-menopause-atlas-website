@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Menopause Atlas by Thea E. Kuiper | The menopause book that shows its work</title>
+<meta name="description" content="What is happening, what actually helps, and what to ask your doctor about perimenopause and menopause. 37 chapters, 424 pages, real numbers and named sources. Read Chapter 3 free.">
+<link rel="canonical" href="https://themenopauseatlas.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="theme-color" content="#1F3D2B">
+<meta property="og:type" content="book">
+<meta property="og:title" content="The Menopause Atlas">
+<meta property="og:description" content="The menopause book that shows its work. Real numbers, named sources, and the questions to ask your doctor.">
+<meta property="og:image" content="https://themenopauseatlas.com/cover.jpg">
+<meta property="og:url" content="https://themenopauseatlas.com/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Book", "name": "The Menopause Atlas", "author": {"@type": "Person", "name": "Thea E. Kuiper"}, "publisher": {"@type": "Organization", "name": "Make Masters LLC"}, "numberOfPages": 424, "inLanguage": "en-US", "bookEdition": "First edition", "workExample": [{"@type": "Book", "bookFormat": "https://schema.org/Paperback", "isbn": "9798177679280", "url": "https://www.amazon.com/dp/B0HLMMCFMT"}, {"@type": "Book", "bookFormat": "https://schema.org/Hardcover", "isbn": "9798177749167", "url": "https://www.amazon.com/dp/B0HLN67M5L"}]}</script>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --green:#1F3D2B; --green-deep:#14291D; --green-line:#2C5239;
+  --gold:#D9A82A; --gold-deep:#8F6A0E;
+  --cream:#F3EEDC; --cream-2:#E9E2C9; --cream-dim:#CFC7AC;
+  --ink:#1E211C; --ink-2:#4F544A; --ink-3:#6E7367;
+  --bg:var(--cream); --bg-2:var(--cream-2); --fg:var(--ink); --fg-2:var(--ink-2); --fg-3:var(--ink-3);
+  --panel:#fff; --line:#D8D0B4; --accent:var(--gold-deep); --chip:#fff; --chip-on:#1F3D2B; --chip-on-fg:#F3EEDC;
+  --display:"Cormorant",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#12211A; --bg-2:#172A20; --fg:#F3EEDC; --fg-2:#CFC7AC; --fg-3:#A3AA9C;
+  --panel:#1A2F23; --line:#2C5239; --accent:var(--gold); --chip:#1A2F23; --chip-on:#D9A82A; --chip-on-fg:#14291D;
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#12211A; --bg-2:#172A20; --fg:#F3EEDC; --fg-2:#CFC7AC; --fg-3:#A3AA9C;
+  --panel:#1A2F23; --line:#2C5239; --accent:var(--gold); --chip:#1A2F23; --chip-on:#D9A82A; --chip-on-fg:#14291D;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:.005em}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.eyebrow{font:600 12px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--green-deep);padding:8px 12px;z-index:99}
+.skip:focus{left:8px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:4px;font:700 16px/1.1 var(--sans);text-decoration:none;letter-spacing:.01em;border:1.5px solid transparent;transition:transform .12s ease,background .12s ease,border-color .12s ease;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,.chip:focus-within,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn.gold{background:var(--gold);color:var(--green-deep);border-color:var(--gold)}
+.btn.gold:hover{background:#E4B63A}
+.btn.ghost{background:transparent;color:var(--cream);border-color:rgba(243,238,220,.5)}
+.btn.ghost:hover{border-color:var(--cream)}
+.btn.line{background:transparent;color:var(--fg);border-color:var(--line)}
+.btn.line:hover{border-color:var(--fg-2)}
+.btn .k{font-weight:500;opacity:.8}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+
+/* ---------- hero ---------- */
+.hero{background:var(--green);color:var(--cream);position:relative;overflow:hidden;padding-block:clamp(36px,6vw,80px)}
+.hero .fig{position:absolute;right:-6%;bottom:-8%;width:min(58vw,640px);opacity:.12;pointer-events:none}
+.hero .grid{display:grid;grid-template-columns:minmax(220px,330px) 1fr;gap:clamp(28px,5vw,64px);align-items:center;position:relative}
+.hero .cover{box-shadow:0 30px 60px -20px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);border-radius:2px;width:100%;height:auto}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(40px,5.6vw,74px);color:var(--cream);margin-top:12px;max-width:16ch}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero .lede{font-size:clamp(18px,1.6vw,20px);line-height:1.5;color:var(--cream-dim);max-width:52ch;margin:18px 0 0}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
+.assure{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;font-size:14px;color:var(--cream-dim)}
+.assure span::before{content:"✓ ";color:var(--gold);font-weight:700}
+.hero .free{margin-top:20px;font-size:15px;color:var(--cream-dim)}
+.hero .free a{color:var(--gold);font-weight:600}
+.hero .strip{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:26px;padding-top:16px;border-top:1px solid rgba(217,168,42,.35);color:var(--cream-dim);font-size:14px}
+.hero .strip b{color:var(--gold);font-weight:700}
+
+/* ---------- sections ---------- */
+section{padding-block:clamp(52px,7vw,96px)}
+section h2{font-size:clamp(32px,4.2vw,50px);margin-top:10px}
+.sub{font-size:19px;color:var(--fg-2);max-width:62ch;margin-top:14px}
+.alt{background:var(--bg-2)}
+
+/* ---------- is this you ---------- */
+.you{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px;margin:34px 0 0;padding:0;list-style:none}
+.you li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);padding:16px 18px;color:var(--fg);font-size:16.5px;line-height:1.5}
+.bridge{font-family:var(--display);font-size:clamp(24px,2.6vw,30px);line-height:1.3;margin-top:34px;max-width:40ch}
+
+/* ---------- three rules ---------- */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 40px;margin-top:44px}
+.three h3{font-size:27px;margin-bottom:10px}
+.three p{color:var(--fg-2);margin:0}
+.three .n{font:600 13px/1 var(--sans);letter-spacing:.14em;color:var(--accent);margin-bottom:12px}
+
+/* ---------- appointment tool ---------- */
+.tool{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;margin-top:36px;align-items:start}
+.panel{background:var(--panel);border:1px solid var(--line);padding:clamp(18px,3vw,28px);border-radius:4px}
+.panel h3{font-size:24px;margin-bottom:4px}
+.panel .hint{font-size:14px;color:var(--fg-3);margin:0 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-block;padding:9px 13px;border:1.5px solid var(--line);border-radius:999px;background:var(--chip);font-size:14.5px;line-height:1.2;color:var(--fg);cursor:pointer;user-select:none}
+.chip input:checked + span{background:var(--chip-on);border-color:var(--chip-on);color:var(--chip-on-fg)}
+.chip input:checked + span::before{content:"✓ "}
+.field{margin-top:18px}
+.field label{display:block;font:600 14px/1.3 var(--sans);margin-bottom:6px;color:var(--fg)}
+.field input,.field textarea{width:100%;font:16px/1.4 var(--sans);padding:10px 12px;border:1.5px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg)}
+.field textarea{min-height:72px;resize:vertical}
+.private{font-size:13px;color:var(--fg-3);margin-top:14px}
+.sheet{position:sticky;top:16px}
+.sheet .shead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1.5px solid var(--gold);padding-bottom:10px;margin-bottom:12px}
+.sheet .shead h3{font-size:22px}
+.sheet .shead small{font-size:12px;color:var(--fg-3);white-space:nowrap}
+.sheet .grp{margin:14px 0 0}
+.sheet .grp h4{font:700 13px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+.sheet ol{margin:0;padding-left:20px;font-size:15px;display:grid;gap:5px}
+.sheet .more{font-size:13px;color:var(--fg-3);margin:6px 0 0}
+.sheet .more a{font-weight:600}
+.sheet .mine{font-size:15px;margin:0 0 4px}
+.sheet .mine b{font-weight:700}
+.sheet .empty{color:var(--fg-3);font-size:15px;margin:8px 0}
+.sheet .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.sheet .foot{font-size:12px;color:var(--fg-3);margin-top:16px;border-top:1px solid var(--line);padding-top:10px}
+
+/* ---------- excerpt ---------- */
+.page{background:var(--panel);border:1px solid var(--line);padding:clamp(22px,4vw,40px);margin-top:36px;max-width:820px;box-shadow:0 20px 40px -30px rgba(0,0,0,.35)}
+.page .flag{font:700 12px/1 var(--sans);letter-spacing:.16em;color:var(--accent);margin-bottom:14px}
+.page h3{font-size:25px;margin-bottom:12px}
+.page p{margin:0 0 12px;color:var(--fg)}
+.page .from{font-size:13px;color:var(--fg-3);margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+
+/* ---------- chapters ---------- */
+.groups{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;margin-top:36px}
+.group{border-top:1.5px solid var(--gold)}
+.group summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:14px 0}
+.group summary::-webkit-details-marker{display:none}
+.group summary h3{font-size:24px}
+.group summary .c{font:600 13px/1 var(--sans);color:var(--fg-3);white-space:nowrap}
+.group summary .c::after{content:" +";color:var(--accent);font-size:18px}
+.group[open] summary .c::after{content:" –"}
+.group ol{margin:0 0 18px;padding:0;list-style:none;display:grid;gap:5px}
+.group li{display:grid;grid-template-columns:34px 1fr;gap:8px;font-size:15.5px;color:var(--fg-2);line-height:1.4}
+.group li b{font:700 13px/1.6 var(--sans);color:var(--accent);font-variant-numeric:tabular-nums}
+
+/* ---------- editions ---------- */
+.editions{background:var(--green);color:var(--cream)}
+.editions .eyebrow{color:var(--gold)}
+.editions h2{color:var(--cream)}
+.editions .sub{color:var(--cream-dim)}
+.cards{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px;margin-top:40px;align-items:stretch}
+.card{background:var(--green-deep);border:1px solid var(--green-line);padding:28px 26px;display:flex;flex-direction:column;gap:12px;border-radius:4px;position:relative}
+.card.feat{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset}
+.card .badge{position:absolute;top:-12px;left:22px;background:var(--gold);color:var(--green-deep);font:700 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:3px}
+.card .t{font-family:var(--display);font-size:30px;line-height:1;color:var(--cream)}
+.card .price{font:700 36px/1 var(--sans);color:var(--gold);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.card .price small{font-size:14px;font-weight:500;color:var(--cream-dim);letter-spacing:0}
+.card ul{margin:0;padding-left:18px;color:var(--cream-dim);font-size:15px;display:grid;gap:6px}
+.card .btn{margin-top:auto}
+.card .tag{font:600 11px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.card .fine{font-size:13px;color:var(--cream-dim);text-align:center;margin:0}
+.guar{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-top:30px;padding:20px 24px;border:1px solid var(--green-line);border-left:4px solid var(--gold);max-width:860px}
+.guar .seal{width:58px;height:58px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:700 18px/1 var(--sans);color:var(--gold)}
+.guar p{margin:0;color:var(--cream-dim)}
+.guar b{color:var(--cream)}
+.gift{margin-top:14px;font-size:15px;color:var(--cream-dim);max-width:78ch}
+.gift b{color:var(--cream)}
+
+/* ---------- letter ---------- */
+.letter{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.letter .offer{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:center}
+.letter .offer img{box-shadow:0 14px 30px -14px rgba(0,0,0,.5);width:110px;height:auto}
+.letter ul{margin:12px 0 0;padding-left:18px;color:var(--fg-2);display:grid;gap:4px}
+form.signup{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+form.signup input[type=email]{flex:1 1 240px;font:16px/1.2 var(--sans);padding:14px 14px;border:1.5px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
+form.signup .btn{flex:0 0 auto}
+.signup-note{font-size:13px;color:var(--fg-3);margin-top:10px}
+.signup-ok{display:none;margin-top:14px;padding:12px 14px;border-left:3px solid var(--gold);background:var(--panel)}
+
+/* ---------- author ---------- */
+.author{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start;margin-top:36px}
+.author .method{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.author .method li{padding-left:22px;position:relative;color:var(--fg-2)}
+.author .method li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:1.5px;background:var(--gold)}
+.author .method li b{color:var(--fg)}
+.author .note{font-family:var(--display);font-size:25px;line-height:1.3;color:var(--fg);font-style:italic;margin:0}
+
+/* ---------- faq ---------- */
+.faq details{border-top:1px solid var(--line);padding:18px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font:600 17px/1.4 var(--sans);color:var(--fg);list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-weight:400;font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:12px 0 0;color:var(--fg-2);max-width:70ch}
+
+/* ---------- final cta ---------- */
+.final{background:var(--green);color:var(--cream);text-align:center}
+.final h2{color:var(--cream);max-width:22ch;margin-inline:auto}
+.final p{color:var(--cream-dim);max-width:56ch;margin:16px auto 0}
+.final .cta{justify-content:center}
+
+/* ---------- footer ---------- */
+footer{background:var(--green-deep);color:var(--cream-dim);padding-block:40px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr;gap:32px}
+footer b{color:var(--cream)}
+footer a{color:var(--gold)}
+footer p{margin:0 0 10px;max-width:70ch}
+
+/* ---------- floating buy bar ---------- */
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--green-deep);color:var(--cream);border-top:1.5px solid var(--gold);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));transform:translateY(110%);transition:transform .28s ease;box-shadow:0 -12px 30px -18px rgba(0,0,0,.6)}
+.buybar.on{transform:translateY(0)}
+.buybar .in{max-width:1120px;margin-inline:auto;display:flex;align-items:center;gap:14px}
+.buybar .name{font-family:var(--display);font-size:20px;line-height:1;color:var(--gold);white-space:nowrap;margin-right:auto}
+.buybar .name small{display:block;font:500 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);margin-top:5px}
+.buybar .opts{display:flex;gap:8px;flex-wrap:nowrap}
+.buybar .opt{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 14px;border-radius:4px;border:1.5px solid rgba(243,238,220,.35);color:var(--cream);text-decoration:none;font:600 13px/1.1 var(--sans);min-width:98px;transition:border-color .12s ease,background .12s ease}
+.buybar .opt b{font-size:15px;color:var(--gold);font-variant-numeric:tabular-nums}
+.buybar .opt:hover{border-color:var(--cream)}
+.buybar .opt:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.buybar .opt.gold{background:var(--gold);border-color:var(--gold);color:var(--green-deep);min-width:150px}
+.buybar .opt.gold b{color:var(--green-deep)}
+.buybar .opt.gold:hover{background:#E4B63A}
+footer{padding-bottom:calc(40px + 84px + env(safe-area-inset-bottom,0px))}
+@media (prefers-reduced-motion:reduce){.buybar{transition:none}}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .tool{grid-template-columns:1fr}
+  .sheet{position:static}
+  .cards{grid-template-columns:1fr}
+  .letter{grid-template-columns:1fr;gap:26px}
+}
+@media (max-width:820px){
+  .hero .grid{grid-template-columns:1fr;gap:22px}
+  .hero .coverwrap{order:2;max-width:220px}
+  .hero .fig{opacity:.07}
+  .three,.groups,.author,.you,footer .cols{grid-template-columns:1fr}
+  .groups{gap:0}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .cta .btn{width:100%}
+  .buybar .name{display:none}
+  .buybar .opt{min-width:0;flex:1;padding:8px 6px;font-size:12px}
+  .buybar .opt.gold{min-width:0;flex:1.6}
+  .buybar .opt b{font-size:14px}
+  .buybar .opts{width:100%}
+  .guar{grid-template-columns:1fr}
+}
+
+/* ---------- print: only the appointment sheet ---------- */
+@media print{
+  body{background:#fff;color:#000;font-size:12pt}
+  body > *:not(main){display:none !important}
+  main > *:not(#prep){display:none !important}
+  #prep{padding:0;background:#fff}
+  #prep .wrap > :not(.tool){display:none}
+  #prep .tool{display:block;margin:0}
+  #prep .tool > .panel:first-child{display:none}
+  .sheet{border:0;padding:0;position:static;background:#fff;color:#000}
+  .sheet .acts{display:none}
+  .sheet .more a{color:#000;text-decoration:none}
+  .sheet ol{font-size:11.5pt}
+  .sheet .grp{break-inside:avoid}
+  .buybar{display:none}
+}
+</style>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <img class="fig" src="figure.png" alt="" aria-hidden="true">
+  <div class="wrap grid">
+    <div class="coverwrap"><img class="cover" src="cover.jpg" width="330" height="483" alt="The Menopause Atlas by Thea E. Kuiper, front cover: a woman curled in a circle, drawn in gold contour lines on dark green"></div>
+    <div>
+      <div class="eyebrow">The Menopause Atlas · Thea E. Kuiper</div>
+      <h1>The menopause book that <em>shows its work.</em></h1>
+      <p class="lede">What is happening, what actually helps, and what to ask your doctor about perimenopause and menopause. Every option weighed against the evidence, every risk in real numbers, and the exact questions to take into your next appointment.</p>
+      <div class="cta">
+        <a class="btn gold" href="https://shop.themenopauseatlas.com/checkout/buy/65ac304a-0d37-449a-8072-aede5941b36b" data-buy="digital">Get the digital edition <span class="k">$29.99</span></a>
+        <a class="btn ghost" href="#editions">Paperback &amp; hardcover</a>
+      </div>
+      <div class="assure"><span>Instant download</span><span>Free updated editions</span><span>14-day money-back guarantee</span></div>
+      <p class="free">Not ready to buy? <a href="#prep">Build your free appointment checklist</a> or <a href="#letter">read Chapter 3 free</a>.</p>
+      <div class="strip">
+        <span><b>37</b> chapters</span><span><b>424</b> pages</span><span><b>340+</b> terms explained in plain English</span><span>Studies <b>named in the text</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="you">
+  <div class="wrap">
+    <div class="eyebrow">Who it is for</div>
+    <h2>If any of this sounds familiar, this book was written for you.</h2>
+    <ul class="you">
+      <li>You were told "it's just your age" and sent home with nothing.</li>
+      <li>You were refused hormone therapy because of a headline from twenty years ago, and nobody showed you the actual numbers.</li>
+      <li>You are waking at 3 a.m. soaked, foggy by noon, and not sure which of it is hormones.</li>
+      <li>Your periods have turned unpredictable or heavy, and you don't know what is normal and what needs a call.</li>
+      <li>You have read a hundred posts online and trust none of them.</li>
+      <li>You get fifteen minutes with your doctor and want to use every one of them well.</li>
+    </ul>
+    <p class="bridge">The Menopause Atlas doesn't tell you what to take. It tells you what the evidence says, so you can walk in and have the conversation you came for.</p>
+  </div>
+</section>
+
+<section id="different" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">How it is different</div>
+    <h2>Built to be used in the exam room, not admired on the shelf.</h2>
+    <p class="sub">Three rules run through all 424 pages. They are what make this a reference rather than another opinion.</p>
+    <div class="three">
+      <div>
+        <div class="n">RULE ONE</div>
+        <h3>Real numbers, not scary percentages.</h3>
+        <p>A headline says hormone therapy "raises breast cancer risk 26%." This book shows what that means per thousand women over five years, next to the number for women taking nothing, so you can judge the size of the risk for yourself.</p>
+      </div>
+      <div>
+        <div class="n">RULE TWO</div>
+        <h3>Sources in the sentence.</h3>
+        <p>Studies are named where the claim is made, with the journal and the year, and every evidence box says what kind of study it was and where it is weak. When two good studies disagree, you get both and a plain account of why.</p>
+      </div>
+      <div>
+        <div class="n">RULE THREE</div>
+        <h3>It never tells you what to take.</h3>
+        <p>No doses, no regimens. Where a treatment needs a prescription, the book explains what it is for, what the trials found, and what to ask. Nearly every chapter ends with questions for your clinician and the red flags that mean don't wait.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prep">
+  <div class="wrap">
+    <div class="eyebrow">Free tool</div>
+    <h2>Walk into your next appointment prepared.</h2>
+    <p class="sub">Tick what you are dealing with. You'll get a one-page checklist of questions from the book to print or save as a PDF and take with you.</p>
+    <div class="tool">
+      <div class="panel">
+        <h3>What's going on for you?</h3>
+        <p class="hint">Choose as many as apply.</p>
+        <div class="chips" id="chips"></div>
+        <div class="field"><label for="f-long">How long has this been going on?</label><input id="f-long" type="text" autocomplete="off" placeholder="e.g. about a year, worse since spring"></div>
+        <div class="field"><label for="f-meds">Everything you take, including supplements</label><textarea id="f-meds" autocomplete="off" placeholder="Prescriptions, over-the-counter, vitamins, herbal products"></textarea></div>
+        <div class="field"><label for="f-goal">The one thing you most want from this visit</label><input id="f-goal" type="text" autocomplete="off" placeholder="e.g. to sleep through the night again"></div>
+        <p class="private">Private by design: nothing you type here is saved or sent anywhere. It stays in this page and disappears when you close it.</p>
+      </div>
+      <div class="panel sheet" id="sheet" aria-live="polite">
+        <div class="shead"><h3>My appointment questions</h3><small>The Menopause Atlas</small></div>
+        <div id="sheet-body"></div>
+        <div class="acts">
+          <button class="btn gold" type="button" id="print">Print or save as PDF</button>
+          <a class="btn line" href="#editions">Get the full book</a>
+        </div>
+        <p class="foot">From <i>The Menopause Atlas</i> by Thea E. Kuiper · themenopauseatlas.com. Information, not medical advice. These questions are a starting point for a conversation with your clinician.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="sample">
+  <div class="wrap">
+    <div class="eyebrow">Read a page</div>
+    <h2>One sentence that could change your appointment.</h2>
+    <p class="sub">From Chapter 19, on hormone therapy. This is what "what to ask your doctor" looks like in practice.</p>
+    <div class="page">
+      <div class="flag">CHAPTER 19 · WHY ROUTE MATTERS</div>
+      <h3>"No hormone therapy" and "no oral hormone therapy" are different answers.</h3>
+      <p>In absolute terms the risk is small. Even at the higher estimates from the Cochrane review, about 99 in 100 women taking oral combined therapy for a year will not have a clot. It is not the coin flip it can sound like.</p>
+      <p>A Swedish nationwide registry study of over 900,000 women, published in the <i>BMJ</i> in 2024, compared eight hormone therapy routes and regimens. Every oral form raised clot risk. Transdermal forms, tracked as separate groups, did not.</p>
+      <p><b>One sentence to bring to your clinician:</b> if you were told you cannot take hormone therapy because of clot risk, ask whether that applies to transdermal estrogen too, or only to the pill. Some clotting conditions carry risk whatever the route, so this is a conversation for your clinician, not a self-diagnosis. Have it anyway.</p>
+      <div class="from">Chapter 19, Hormone Therapy: The Decision and the Delivery. The full passage carries the sources, the evidence grade, and the cases where route does not change the answer.</div>
+    </div>
+    <div class="cta"><a class="btn gold" href="free-chapter-3.pdf" download>Read all of Chapter 3 free</a><a class="btn line" href="#inside">See all 37 chapters</a></div>
+  </div>
+</section>
+
+<section id="inside">
+  <div class="wrap">
+    <div class="eyebrow">What is inside</div>
+    <h2>Thirty-seven chapters. Every one stands on its own.</h2>
+    <p class="sub">Each chapter follows the same shape: what you may feel, what is happening in the body, what else it could be, the evidence for each option, the red flags, and the questions to ask. Open it anywhere.</p>
+    <div class="groups">
+      <details class="group" open><summary><h3>Understanding it</h3><span class="c">Ch. 1–8</span></summary><ol>
+        <li><b>1</b>Why This Book Exists, and How to Use It</li><li><b>2</b>The Menopause Map: Stages, Timing, and Terminology</li><li><b>3</b>What Is Normal, What Is Not: When to Call a Clinician</li><li><b>4</b>Hormones 101: Estrogen, Progesterone, Testosterone, FSH</li><li><b>5</b>The Brain-Ovary-Body Connection</li><li><b>6</b>Why Symptoms Happen: Thermoregulation, Inflammation, Metabolism</li><li><b>7</b>Labs, Diagnosis, Tracking, and the Limits of Testing</li><li><b>8</b>How to Talk With Your Doctor</li></ol></details>
+      <details class="group" open><summary><h3>The symptoms</h3><span class="c">Ch. 9–18</span></summary><ol>
+        <li><b>9</b>Hot Flashes and Night Sweats</li><li><b>10</b>Sleep, Insomnia, and Night Waking</li><li><b>11</b>Mood, Anxiety, Depression, and Irritability</li><li><b>12</b>Brain Fog, Memory, Focus, and Dementia Fears</li><li><b>13</b>Period Changes, Heavy Bleeding, and Fibroids</li><li><b>14</b>Vaginal Health, GSM, UTIs, and the Pelvic Floor</li><li><b>15</b>Sex, Desire, Pain, Intimacy, and Testosterone</li><li><b>16</b>Weight, Belly Fat, Blood Sugar, and Metabolism</li><li><b>17</b>Joints, Muscles, Pain, and Frozen Shoulder</li><li><b>18</b>Skin, Hair, Oral Health, Migraine, and Other Overlooked Symptoms</li></ol></details>
+      <details class="group"><summary><h3>Treatment</h3><span class="c">Ch. 19–21</span></summary><ol>
+        <li><b>19</b>Hormone Therapy: The Decision and the Delivery</li><li><b>20</b>HT Risks: Breast, Endometrial, Clot, Stroke, Heart, Dementia</li><li><b>21</b>Nonhormonal Prescriptions: SSRIs, SNRIs, Gabapentin, Fezolinetant, Elinzanetant</li></ol></details>
+      <details class="group"><summary><h3>The long view</h3><span class="c">Ch. 22–26</span></summary><ol>
+        <li><b>22</b>Bones and Osteoporosis</li><li><b>23</b>Heart, Cholesterol, Blood Pressure, and Metabolic Syndrome</li><li><b>24</b>Cancer Risk and Screening</li><li><b>25</b>Brain Longevity and Mental Health</li><li><b>26</b>Early Menopause, POI, Surgical Menopause, and Cancer Survivors</li></ol></details>
+      <details class="group"><summary><h3>Food, movement, mind, tradition</h3><span class="c">Ch. 27–33</span></summary><ol>
+        <li><b>27</b>The Menopause Plate: What to Eat Now, and What Food Can Actually Do</li><li><b>28</b>Movement: Strength, Cardio, Mobility, Pelvic Floor, Recovery</li><li><b>29</b>The Stress Reset: Stress Physiology and Nervous System Repair</li><li><b>30</b>Mindfulness, CBT, Breathwork, Yoga, and Meditation</li><li><b>31</b>Acupuncture and Traditional Chinese Medicine</li><li><b>32</b>Ayurveda: Doshas, Heat, Sleep, Digestion, and Midlife Balance</li><li><b>33</b>Botanicals and Supplements: What Works, and How to Use Them Safely</li></ol></details>
+      <details class="group"><summary><h3>Life, and the plan</h3><span class="c">Ch. 34–37</span></summary><ol>
+        <li><b>34</b>Relationships, Work, Identity, Aging, Beauty, and Power</li><li><b>35</b>Recipes, Menus, Rituals, Shopping Lists, and Kitchen Medicine</li><li><b>36</b>The First Thirty Days, and the Ninety After</li><li><b>37</b>Resource Guide, Glossary, Trackers, and Evidence Tables</li></ol></details>
+    </div>
+  </div>
+</section>
+
+<section class="editions" id="editions">
+  <div class="wrap">
+    <div class="eyebrow">Editions</div>
+    <h2>Choose how you want to keep it.</h2>
+    <p class="sub">The same 37 chapters in every edition. Only the digital edition is updated when the guidance changes.</p>
+    <div class="cards">
+      <div class="card feat">
+        <div class="badge">Recommended</div>
+        <div class="tag">Direct from the publisher</div>
+        <div class="t">Digital edition</div>
+        <div class="price">$29.99 <small>PDF · phone, tablet, computer</small></div>
+        <ul>
+          <li><b style="color:var(--cream)">Free corrected editions</b> whenever the guidance changes</li>
+          <li>Search every page for the one word you need</li>
+          <li>Every "see Chapter 8" is a live link</li>
+          <li>Bookmarks for all 37 chapters</li>
+          <li>Download link by email within a minute</li>
+        </ul>
+        <a class="btn gold" href="https://shop.themenopauseatlas.com/checkout/buy/65ac304a-0d37-449a-8072-aede5941b36b" data-buy="digital">Get the digital edition</a>
+        <p class="fine">Secure checkout · 14-day money-back guarantee</p>
+      </div>
+      <div class="card">
+        <div class="tag">On Amazon</div>
+        <div class="t">Paperback</div>
+        <div class="price">$34.99 <small>7 × 10 in</small></div>
+        <ul>
+          <li>Large format, so tables and figures read at full size</li>
+          <li>Room to write in the margins</li>
+          <li>Ships from Amazon</li>
+        </ul>
+        <a class="btn ghost" href="https://www.amazon.com/dp/B0HLMMCFMT">Buy on Amazon</a>
+      </div>
+      <div class="card">
+        <div class="tag">On Amazon</div>
+        <div class="t">Hardcover</div>
+        <div class="price">$49.99 <small>7 × 10 in</small></div>
+        <ul>
+          <li>The edition for a shelf you'll keep for twenty years</li>
+          <li>A gift that says "I took this seriously"</li>
+          <li>Ships from Amazon</li>
+        </ul>
+        <a class="btn ghost" href="https://www.amazon.com/dp/B0HLN67M5L">Buy on Amazon</a>
+      </div>
+    </div>
+    <div class="guar">
+      <div class="seal">14</div>
+      <p><b>The 14-day guarantee.</b> If the digital edition isn't what you hoped, email us within 14 days for a full refund. No questions, and no need to explain.</p>
+    </div>
+    <p class="gift"><b>Buying for your mother, sister, partner, or friend?</b> The paperback and hardcover can ship straight to her as a gift through Amazon. There's also a short section at the back of the book for the people who love her.</p>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="wrap letter">
+    <div>
+      <div class="eyebrow">Free sample</div>
+      <h2>Read Chapter 3 free.</h2>
+      <p class="sub" style="margin-top:12px">Chapter 3 is the one the book tells frightened readers to open first: what is normal, what is not, and when to call. Download it now. No email needed.</p>
+    </div>
+    <div class="panel">
+      <div class="offer">
+        <img src="cover.jpg" width="110" height="161" alt="">
+        <div>
+          <b>You'll get:</b>
+          <ul>
+            <li>Chapter 3 as a free PDF, 10 pages</li>
+            <li>What is normal, what is not, and the red flags that mean call a clinician</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta" style="margin-top:20px"><a class="btn gold" href="free-chapter-3.pdf" download>Download Chapter 3 (free PDF)</a></div>
+      <p class="signup-note">Information, not medical advice.</p>
+    </div>
+  </div>
+</section>
+
+<section id="author" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Who wrote it</div>
+    <h2>Thea E. Kuiper</h2>
+    <div class="author">
+      <div>
+        <p class="note">You are entitled to know who is speaking before you decide how much weight to give it.</p>
+        <p style="color:var(--fg-2);margin-top:16px">The author is not a physician, a nurse, a pharmacist, or a licensed clinician of any kind. Where the book says "no trial I could find," that is a reader of the literature reporting what the literature says, not a clinical opinion, and the book never pretends otherwise. What it is instead is a work of research and synthesis, built on a method you can judge for yourself.</p>
+      </div>
+      <ul class="method">
+        <li><b>Claims are traced to sources,</b> named in the text where the claim is made rather than in an unread list at the back.</li>
+        <li><b>Evidence is graded, and the grade is printed.</b> Every science box names the study type and its limitations.</li>
+        <li><b>Absolute risk before relative risk.</b> Where a number can be expressed as how many women in a thousand, it is.</li>
+        <li><b>Uncertainty is stated, not smoothed over.</b> Where the evidence conflicts, both sides. Where it runs out, a sentence saying so.</li>
+        <li><b>Drug information is checked against current labels,</b> not summaries of them.</li>
+        <li><b>Decisions are handed back.</b> Wherever an answer depends on one woman's body, the book says so and gives her the question to ask.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Questions</div>
+    <h2>Before you buy.</h2>
+    <div style="margin-top:32px">
+      <details><summary>Is it for perimenopause too, or only after periods stop?</summary><p>Both. Most symptoms peak during perimenopause, the years before your final period, and the book is organized around that. It also covers early, premature, and surgical menopause, and the long-term health picture after menopause.</p></details>
+      <details><summary>Is this medical advice?</summary><p>No. It is information, designed to help you talk to a clinician rather than replace one. Nothing in it should be used to start, stop, or change a prescription, supplement, or over-the-counter product on your own.</p></details>
+      <details><summary>Is it up to date?</summary><p>It is current to September 2026 and covers two changes that happened while it was being written: the FDA's removal of risk statements from the hormone therapy boxed warning, and ACOG's 2026 update on evaluating postmenopausal bleeding. The digital edition is corrected when guidance changes, and buyers receive each corrected edition free.</p></details>
+      <details><summary>How is the digital edition delivered?</summary><p>By email, within about a minute of purchase, as a download link for a PDF that opens on any phone, tablet, or computer. There is no DRM, so it opens in whatever reader you already use, including the Kindle and Apple Books apps.</p></details>
+      <details><summary>Is there a Kindle edition?</summary><p>Yes, on Amazon. The direct digital edition here is the one that comes with free corrected editions and the searchable, fully linked PDF.</p></details>
+      <details><summary>What if it isn't right for me?</summary><p>Email us within 14 days of buying the digital edition and we'll refund you in full. Print editions are covered by Amazon's return policy.</p></details>
+      <details><summary>Does it recommend supplements or alternative medicine?</summary><p>It assesses them the same way it assesses everything else, and reports null and negative findings as prominently as positive ones. You will not be told to buy anything.</p></details>
+      <details><summary>Can I read just the part I need?</summary><p>That is how it is built. Every chapter defines its own terms, and nearly every one carries its own red-flag box and ends with its own questions. Chapter 3 exists for the reader who opens the book frightened and needs one page.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Your next appointment can go differently.</h2>
+    <p>Go in knowing what the evidence says, what your options are, and exactly what to ask.</p>
+    <div class="cta"><a class="btn gold" href="https://shop.themenopauseatlas.com/checkout/buy/65ac304a-0d37-449a-8072-aede5941b36b" data-buy="digital">Get the digital edition <span class="k">$29.99</span></a><a class="btn ghost" href="#editions">See all editions</a></div>
+  </div>
+</section>
+
+</main>
+
+<nav class="buybar" id="buybar" aria-label="Buy the book">
+  <div class="in">
+    <div class="name">The Menopause Atlas<small>Thea E. Kuiper</small></div>
+    <div class="opts">
+      <a class="opt gold" href="https://shop.themenopauseatlas.com/checkout/buy/65ac304a-0d37-449a-8072-aede5941b36b" data-buy="digital">Digital edition <b>$29.99</b></a>
+      <a class="opt" href="https://www.amazon.com/dp/B0HLMMCFMT">Paperback <b>$34.99</b></a>
+      <a class="opt" href="https://www.amazon.com/dp/B0HLN67M5L">Hardcover <b>$49.99</b></a>
+    </div>
+  </div>
+</nav>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <p><b>The Menopause Atlas</b> by Thea E. Kuiper is published by Make Masters LLC. Paperback ISBN 9798177679280 · Hardcover ISBN 9798177749167.</p>
+      <p>This book is information, not medical advice. It does not create a clinician–patient relationship, and it is built to help you talk to your clinician, not to replace one. If you think you may be having a medical emergency, call your local emergency number.</p>
+      <p><b>Privacy.</b> The appointment checklist runs entirely in your browser; nothing you type is stored or sent. Purchases are processed by Lemon Squeezy and Amazon.</p>
+    </div>
+    <div>
+      <p><b>Contact</b></p>
+      <p><a href="mailto:hello@themenopauseatlas.com">hello@themenopauseatlas.com</a></p>
+      <p style="margin-top:14px">© 2026 Make Masters LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+var PREP = {"topics": [{"id": "hot", "label": "Hot flashes and night sweats", "ch": 9, "title": "Hot Flashes and Night Sweats", "q": ["Based on my age, my history and how long ago my last period was, am I a candidate for hormone therapy?", "What in my history would make hormone therapy risky for me, and how large is that risk in absolute terms, not percentages?", "If hormone therapy is not right for me, which nonhormonal option would you start with, and what would we try second?", "When should I come back, and what should I be tracking in the meantime?"], "more": 6}, {"id": "sleep", "label": "Sleep and night waking", "ch": 10, "title": "Sleep, Insomnia, and Night Waking", "q": ["Could sleep apnea be contributing to my insomnia, and should I be screened for it?", "Is there a CBT-I program you can refer me to (in person, by phone, or a structured digital program), and is it covered by my insurance?", "Given my history, am I a candidate for hormone therapy, and how much of my sleep problem would you expect it to address?", "Could anything I am currently taking (including over-the-counter medications and supplements) be disrupting my sleep?"], "more": 5}, {"id": "mood", "label": "Mood, anxiety, irritability", "ch": 11, "title": "Mood, Anxiety, Depression, and Irritability", "q": ["Given my history, does this look like a first episode tied to this transition, or a return of something I've dealt with before, and does that change what we try first?", "Have you checked my thyroid?", "Would transdermal estrogen be appropriate for me, given where I am in the transition, and how would that differ if I were already postmenopausal?", "If I have a diagnosis of depression, should we be considering an antidepressant, hormone therapy, or both together?"], "more": 6}, {"id": "fog", "label": "Brain fog and memory", "ch": 12, "title": "Brain Fog, Memory, Focus, and Dementia Fears", "q": ["Could anything else be causing this: my thyroid, my sleep, my mood, a medication I'm taking, my iron or B12 levels?", "Is what I'm describing consistent with typical menopausal brain fog, or does it warrant formal cognitive testing?", "Given my age and how long ago my final period was, where do I fall relative to the hormone therapy research on brain and dementia risk?", "Are there screening tools you can use today to get a baseline, so we have something to compare against later?"], "more": 4}, {"id": "bleed", "label": "Period changes and heavy bleeding", "ch": 13, "title": "Period Changes, Heavy Bleeding, and Fibroids", "q": ["Based on my bleeding pattern, do I need an ultrasound, a biopsy, or both, and what would each rule in or out?", "Could this be a fibroid, a polyp or adenomyosis, and if so, where, and does its location explain my bleeding?", "Should we check my iron and ferritin, and test for a bleeding disorder?", "Of the options (medication, the hormonal IUD, ablation, hysterectomy), which would you recommend first for me, and why?"], "more": 5}, {"id": "gsm", "label": "Vaginal dryness and urinary symptoms", "ch": 14, "title": "Vaginal Health, GSM, UTIs, and the Pelvic Floor", "q": ["Could my symptoms be genitourinary syndrome of menopause, and is there anything else we should rule out first?", "Am I a candidate for vaginal estrogen? Which form fits my life best, and can we switch if it doesn't suit me?", "I have a history of breast cancer / I am on tamoxifen or an aromatase inhibitor: what does that mean for my options, and should we involve my oncologist?", "How long should I expect to use treatment, and what does \"working\" look like in a few months?"], "more": 8}, {"id": "sex", "label": "Sex, desire, and pain", "ch": 15, "title": "Sex, Desire, Pain, Intimacy, and Testosterone", "q": ["Is what I'm experiencing better explained by low desire (HSDD), pain, a medication side effect, a relationship factor, or a combination, and how will we sort that out?", "If pain is part of this, can you examine me for GSM, vestibulodynia, and pelvic floor tenderness or guarding, rather than assuming it's all one thing?", "Would pelvic floor physical therapy be appropriate for me, and can you refer me to someone trained in pelvic health?", "Is flibanserin or bremelanotide a sensible option for me, given that most of the trial evidence behind both comes from premenopausal women?"], "more": 6}, {"id": "weight", "label": "Weight and blood sugar", "ch": 16, "title": "Weight, Belly Fat, Blood Sugar, and Metabolism", "q": ["Can we check my fasting blood sugar (or hemoglobin A1c), a full lipid panel and my blood pressure? Would ApoB be useful for me?", "Based on those numbers, do I meet criteria for metabolic syndrome, insulin resistance or prediabetes?", "Is my weight or shape change consistent with typical menopause-related change, or is there something else to rule out, such as thyroid or medication?", "If I'm concerned about muscle loss, could I get a body composition measurement, like a DXA scan, rather than relying on weight alone?"], "more": 6}, {"id": "joints", "label": "Joint pain and frozen shoulder", "ch": 17, "title": "Joints, Muscles, Pain, and Frozen Shoulder", "q": ["Does my joint pain look more like generalized menopausal arthralgia, or like osteoarthritis, an inflammatory arthritis or something else? What exam or tests would tell us?", "Could my thyroid, vitamin D level or blood sugar be contributing? Can we check them?", "What would you recommend first for my pain (physical therapy, a medicine, an injection), and why that first?", "Given my current strength and mobility, what kind of exercise program would help? Should I see a physical therapist to start safely?"], "more": 6}, {"id": "skin", "label": "Skin, hair, and migraine", "ch": 18, "title": "Skin, Hair, Oral Health, Migraine, and Other Overlooked Symptoms", "q": ["My headache pattern has changed since perimenopause started. Is this ordinary hormonal migraine, or does it need further evaluation?", "Do I have migraine with aura, and how does that change which estrogen options are safe for me?", "Is my hair thinning diffuse or patchy, and should we check my iron and thyroid levels?", "Could any of my current medicines be contributing to my dry mouth or hair changes?"], "more": 4}, {"id": "ht", "label": "Deciding about hormone therapy", "ch": 19, "title": "Hormone Therapy: The Decision and the Delivery", "q": ["Based on my age and how long ago my last period was, am I inside or outside the window of opportunity?", "Do I have any of the eligibility conditions that would make hormone therapy risky or ruled out for me?", "In absolute numbers, not percentages or relative risk, what is my added risk of blood clots, stroke and breast cancer if I start?", "Is oral estrogen off the table for me, or is transdermal the better route for me? Which product do you recommend, and why that one?"], "more": 11}, {"id": "risk", "label": "Hormone therapy risks", "ch": 20, "title": "HT Risks: Breast, Endometrial, Clot, Stroke, Heart, Dementia", "q": ["Given my personal and family history, what is my baseline risk for breast cancer, blood clots, stroke and heart disease, before we even discuss hormone therapy?", "Which specific regimen are you recommending, and what absolute risk, not just relative risk, does it add to my numbers?", "Would a patch, gel or spray lower my clot risk compared with a pill, given my history?", "If I have a uterus, which progestogen and schedule will protect my endometrium, and how will we confirm it is working?"], "more": 5}, {"id": "nonhorm", "label": "Nonhormonal prescriptions", "ch": 21, "title": "Nonhormonal Prescriptions: SSRIs, SNRIs, Gabapentin, Fezolinetant, Elinzanetant", "q": ["Given my personal and family health history, which of these options is safest for me, not just most effective in general?", "If I have a history of breast cancer or take tamoxifen, which specific drugs should I avoid, and which are safe?", "What will this cost me each month with my insurance, and is a manufacturer savings card or patient assistance program available?", "How long should I take this before I know if it is working, and what does \"working\" look like in realistic terms?"], "more": 5}, {"id": "bones", "label": "Bones and osteoporosis", "ch": 22, "title": "Bones and Osteoporosis", "q": ["Based on my age, history and risk factors, should I have a DEXA scan now rather than waiting until 65?", "What is my FRAX score, and how does it change the treatment recommendation compared to my T-score alone?", "Is my bone loss consistent with menopause, or should we rule out another cause: thyroid, parathyroid, vitamin D, or a medicine I'm taking?", "If I'm prescribed denosumab, what exactly is the plan if I ever need to stop it, and who is responsible for making that transition happen?"], "more": 6}, {"id": "heart", "label": "Heart and cholesterol", "ch": 23, "title": "Heart, Cholesterol, Blood Pressure, and Metabolic Syndrome", "q": ["What is my calculated 10-year cardiovascular risk, given my age, blood pressure, cholesterol and other factors?", "Can we check my ApoB, not just a standard lipid panel?", "Do I meet criteria for metabolic syndrome? What are my numbers for waist circumference, triglycerides, HDL, blood pressure and fasting glucose?", "Given my personal and family history, would a statin or blood pressure medication be appropriate now, and what side effects would we watch for?"], "more": 5}, {"id": "cancer", "label": "Cancer screening", "ch": 24, "title": "Cancer Risk and Screening", "q": ["Given my risk factors (breast density, family history, weight, alcohol use), which mammography guideline are you recommending for me, and why?", "If I am taking or considering hormone therapy, does that change my screening schedule?", "Does my family history warrant genetic counseling? (A pattern of breast, ovarian, colorectal or endometrial cancer on either side is worth raising, even in distant relatives.)", "Am I up to date on colorectal cancer screening, starting at 45 unless my family history says otherwise?"], "more": 4}, {"id": "early", "label": "Early or surgical menopause", "ch": 26, "title": "Early Menopause, POI, Surgical Menopause, and Cancer Survivors", "q": ["Has my diagnosis been confirmed with a full workup (FSH, estradiol, thyroid, prolactin, and genetic and autoimmune screening where appropriate), or only with a single hormone level?", "Given my age, are you recommending hormone therapy until about age 51, in line with current guidance for premature and early menopause rather than the guidance written for a woman my mother's age?", "Do I still need contraception, and if so, which method works alongside this?", "What is your plan for monitoring my bone density and heart risk, given how early this started?"], "more": 7}], "base": {"q": ["What would you recommend first, and what would we try if it doesn't work?", "Could anything else explain what I'm feeling? Should we check my thyroid or run any other tests?", "I am currently taking (my full list, including supplements). Do any of these interact with what we are considering?"], "more": 0}};
+(function(){
+  var chips=document.getElementById('chips'), body=document.getElementById('sheet-body');
+  var sel={};
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  PREP.topics.forEach(function(t){
+    var l=document.createElement('label'); l.className='chip';
+    l.innerHTML='<input type="checkbox" value="'+t.id+'"><span>'+esc(t.label)+'</span>';
+    l.querySelector('input').addEventListener('change',function(e){sel[t.id]=e.target.checked;render();});
+    chips.appendChild(l);
+  });
+  ['f-long','f-meds','f-goal'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
+  function val(id){return document.getElementById(id).value.trim();}
+  function render(){
+    var h='', chosen=PREP.topics.filter(function(t){return sel[t.id];});
+    var mine=[['How long',val('f-long')],['What I take',val('f-meds')],['What I most want from this visit',val('f-goal')]].filter(function(x){return x[1];});
+    if(mine.length){h+='<div class="grp"><h4>About me</h4>'+mine.map(function(x){return '<p class="mine"><b>'+x[0]+':</b> '+esc(x[1])+'</p>';}).join('')+'</div>';}
+    if(!chosen.length){h+='<p class="empty">Tick one or more topics on the left and your questions will appear here.</p>';}
+    chosen.forEach(function(t){
+      h+='<div class="grp"><h4>'+esc(t.label)+'</h4><ol>'+t.q.map(function(q){return '<li>'+esc(q)+'</li>';}).join('')+'</ol>';
+      h+='<p class="more">'+(t.more>0?t.more+' more questions, and the evidence behind each, in ':'The evidence behind these is in ')+'<a href="#editions">Chapter '+t.ch+'</a>.</p></div>';
+    });
+    if(chosen.length){h+='<div class="grp"><h4>For any visit</h4><ol>'+PREP.base.q.map(function(q){return '<li>'+esc(q)+'</li>';}).join('')+'</ol></div>';}
+    body.innerHTML=h;
+  }
+  render();
+  document.getElementById('print').addEventListener('click',function(){window.print();});
+})();
+
+
+
+(function(){
+  var bar=document.getElementById('buybar'), hero=document.querySelector('.hero'), eds=document.getElementById('editions'), fin=document.querySelector('.final');
+  if(!('IntersectionObserver' in window)){bar.classList.add('on');return;}
+  var seen={hero:true,eds:false,fin:false};
+  function update(){var show=!seen.hero&&!seen.eds&&!seen.fin;bar.classList.toggle('on',show);}
+  function watch(el,k,th){new IntersectionObserver(function(e){seen[k]=e[0].isIntersecting;update();},{threshold:th}).observe(el);}
+  watch(hero,'hero',0.15); watch(eds,'eds',0.2); watch(fin,'fin',0.3);
+})();
+</script>
+
+</body></html>
