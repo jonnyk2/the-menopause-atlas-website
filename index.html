@@ -495,7 +495,15 @@ footer{padding-bottom:calc(40px + 84px + env(safe-area-inset-bottom,0px))}
         </div>
       </div>
       <div class="cta" style="margin-top:20px"><a class="btn gold" href="free-chapter-3.pdf" download>Download Chapter 3 (free PDF)</a></div>
-      <p class="signup-note">Information, not medical advice.</p>
+      <div style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)">
+        <b>The Atlas Letter.</b> One email a month: what changed in menopause research, one claim checked against the evidence, one question to take to your doctor. No products, no doses.
+        <form class="signup" id="letter-form" action="https://app.kit.com/forms/10158780/subscriptions" method="post" novalidate>
+          <input type="email" name="email_address" placeholder="Your email" autocomplete="email" required aria-label="Email address">
+          <button class="btn" type="submit">Join the letter</button>
+        </form>
+        <p class="signup-ok" id="letter-ok">One more step: check your inbox and confirm. Then you are in.</p>
+        <p class="signup-note">One email a month. Never sold or shared. Unsubscribe in one click. Information, not medical advice.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -616,6 +624,15 @@ var PREP = {"topics": [{"id": "hot", "label": "Hot flashes and night sweats", "c
 })();
 </script>
 
+<script>
+(function(){var f=document.getElementById('letter-form');if(!f)return;
+f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;
+fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+.then(function(r){return r.ok?r.json():Promise.reject(r)})
+.then(function(){f.style.display='none';document.getElementById('letter-ok').style.display='block';
+if(window.fbq)fbq('trackCustom','AtlasLetterSignup');})
+.catch(function(){b.disabled=false;var o=document.getElementById('letter-ok');o.textContent='That did not go through. Please try again, or email hello@themenopauseatlas.com.';o.style.display='block';});});})();
+</script>
 <script>
 document.addEventListener('click',function(e){
   var a=e.target.closest('a'); if(!a||!window.fbq) return;
